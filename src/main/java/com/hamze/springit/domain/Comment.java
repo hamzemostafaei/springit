@@ -8,7 +8,7 @@ import javax.persistence.*;
 @Entity
 @Data
 @NoArgsConstructor
-
+@Table(name = "COMENT")
 public class Comment  extends Auditable{
 
     @Id
