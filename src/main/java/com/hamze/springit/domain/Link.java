@@ -1,4 +1,4 @@
-package com.hamze.springit.model;
+package com.hamze.springit.domain;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -7,16 +7,16 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
-@Entity
 @Data
 @NoArgsConstructor
-
-public class Vote {
+@Entity
+public class Link {
 
     @Id
     @GeneratedValue
 
     private long id;
-    private int vote;
+    private String title;
+    private String url;
 
 }
