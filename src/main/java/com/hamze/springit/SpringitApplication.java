@@ -10,22 +10,11 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Profile;
 
 @SpringBootApplication
-//@EnableConfigurationProperties(SpringitProperties.class)
+@EnableConfigurationProperties
 public class SpringitApplication {
-
-//    @Autowired
-//    private SpringitProperties springitProperties;
 
     public static void main(String[] args) {
         SpringApplication.run(SpringitApplication.class, args);
     }
-
-//    @Bean
-//    @Profile("dev")
-//    CommandLineRunner runner() {
-//        return args -> {
-//            System.out.println("This is something tha we would do in dev.");
-//        };
-//    }
 
 }
